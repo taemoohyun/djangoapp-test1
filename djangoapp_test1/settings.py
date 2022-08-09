@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'djangoapp_test1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgressql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd4jr395a5prtth',
         'USER': 'bahagzvvgnobua',
         'PASSWORD': '73dd618bfaef2a15e495a339b98098194784cd43721b160c81dddb5354b9d250',

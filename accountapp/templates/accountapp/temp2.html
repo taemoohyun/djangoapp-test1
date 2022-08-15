@@ -45,7 +45,9 @@
 
     <!--  BODY  -->
     <div style="margin: 5rem;">
-        <h1>{{ message }}</h1>
+        {% for user in users %}
+        <h1>{{ user.username }}</h1>
+        {% endfor %}
     </div>
 
 

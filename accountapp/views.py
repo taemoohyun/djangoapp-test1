@@ -16,10 +16,10 @@ def helloAPI(request):
 	return Response("hello world!")
 
 @api_view(['GET'])
-def randomDBTest(request,id):
+def randomDBTest(request, id):
 	totalDBTests = DBTest.objects.all()
-	randomDBTests = random.samp;le(list(totalDBTests),id)
-	serializer = DBTestSerializer(randomDBTests,many=True)
+	randomDBTests = random.sample(list(totalDBTests), id)
+	serializer = DBTestSerializer(randomDBTests, many=True)
 	return Response(serializer.data)
 
 def hello_world(request):
